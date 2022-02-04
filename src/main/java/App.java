@@ -27,8 +27,8 @@ public class App {
         port(port);
 
         staticFileLocation("/public");
-        //setUpNewHero();
-       // setUpNewHero1();
+        setUpNewHero();
+        setUpNewHero1();
         Squad.setUpNewSquad();
 //        Squad.setUpNewSquad1();
 
