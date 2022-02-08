@@ -20,6 +20,11 @@ public class Squad {private String squadId;
         //this.squadId = instances.size();
 
     }
+
+    public Squad() {
+
+    }
+
     public static Squad findBySquadId(int i) {
         return null;
     }
