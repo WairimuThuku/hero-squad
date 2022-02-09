@@ -32,7 +32,7 @@ public class App {
         Squad.setUpNewSquad();
         Squad.setUpNewSquad1();
 
-         Spark.get("/", (request, response) -> {
+        Spark.get("/", (request, response) -> {
             HashMap<String, Object> model = new HashMap<>();
             return new ModelAndView(model,"index.hbs");
         }, new HandlebarsTemplateEngine());
