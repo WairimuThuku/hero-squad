@@ -69,8 +69,8 @@ public class App {
             ArrayList<Hero> members = Hero.getAllInstances();
             model.put("heroes",members);
             Squad squad = new Squad();
-            assert newSquad !=null;
-            model.put("allSquadMembers", newSquad.getSquadMembers());
+            assert squad !=null;
+            model.put("allSquadMembers", squad.getSquadMembers());
             return new ModelAndView(model, "squad.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -116,7 +116,5 @@ public class App {
             model.put("newHero",newSquad.getSquadName());
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
-
-
     }
 }
